@@ -1,0 +1,832 @@
+2021-08-31 17:50:49 [scrapy.utils.log] INFO: Scrapy 2.5.0 started (bot: jysw)
+2021-08-31 17:50:49 [scrapy.utils.log] INFO: Versions: lxml 4.5.1.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.8.0 (tags/v3.8.0:fa919fd, Oct 14 2019, 19:37:50) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Windows-10-10.0.19041-SP0
+2021-08-31 17:50:49 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2021-08-31 17:50:49 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'jysw',
+ 'LOG_FILE': 'xueqiu_2021_8_31.log',
+ 'NEWSPIDER_MODULE': 'jysw.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['jysw.spiders']}
+2021-08-31 17:50:49 [scrapy.extensions.telnet] INFO: Telnet Password: 52fda1f02411585d
+2021-08-31 17:50:49 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2021-08-31 17:50:49 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-08-31 17:50:49 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-08-31 17:50:49 [scrapy.middleware] INFO: Enabled item pipelines:
+['jysw.pipelines.CsvPipeline']
+2021-08-31 17:50:49 [scrapy.core.engine] INFO: Spider opened
+2021-08-31 17:50:49 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-08-31 17:50:49 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-08-31 17:50:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.aliexpress.com/robots.txt> (referer: None)
+2021-08-31 17:50:50 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20210831014034&SearchText=hat>
+2021-08-31 17:50:50 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-08-31 17:50:50 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 1,
+ 'downloader/exception_type_count/scrapy.exceptions.IgnoreRequest': 1,
+ 'downloader/request_bytes': 304,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 2657,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 1.111864,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 8, 31, 9, 50, 50, 832180),
+ 'httpcompression/response_bytes': 2468,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'robotstxt/forbidden': 1,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 8, 31, 9, 50, 49, 720316)}
+2021-08-31 17:50:50 [scrapy.core.engine] INFO: Spider closed (finished)
+2021-08-31 19:22:57 [scrapy.utils.log] INFO: Scrapy 2.5.0 started (bot: jysw)
+2021-08-31 19:22:57 [scrapy.utils.log] INFO: Versions: lxml 4.5.1.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.8.0 (tags/v3.8.0:fa919fd, Oct 14 2019, 19:37:50) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1g  21 Apr 2020), cryptography 2.9.2, Platform Windows-10-10.0.19041-SP0
+2021-08-31 19:22:57 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2021-08-31 19:22:57 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'jysw',
+ 'CONCURRENT_REQUESTS': 2,
+ 'LOG_FILE': 'xueqiu_2021_8_31.log',
+ 'NEWSPIDER_MODULE': 'jysw.spiders',
+ 'SPIDER_MODULES': ['jysw.spiders']}
+2021-08-31 19:22:57 [scrapy.extensions.telnet] INFO: Telnet Password: 4a19b30f9208a884
+2021-08-31 19:22:57 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2021-08-31 19:22:58 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-08-31 19:22:58 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-08-31 19:22:58 [scrapy.middleware] INFO: Enabled item pipelines:
+['jysw.pipelines.CsvPipeline']
+2021-08-31 19:22:58 [scrapy.core.engine] INFO: Spider opened
+2021-08-31 19:22:58 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-08-31 19:22:58 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-08-31 19:22:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243> (referer: None)
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 16.02,
+ 'market_capital': 134317543,
+ 'name': 'RenovoRx',
+ 'pe_ttm': None,
+ 'percent': 107.7821,
+ 'symbol': 'RNXT'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 2.35,
+ 'market_capital': 4213550000,
+ 'name': '全球星',
+ 'pe_ttm': None,
+ 'percent': 64.3357,
+ 'symbol': 'GSAT'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 99.59,
+ 'market_capital': 26400641647,
+ 'name': 'Affirm Holdings',
+ 'pe_ttm': None,
+ 'percent': 46.6716,
+ 'symbol': 'AFRM'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 5.09,
+ 'market_capital': 492822020,
+ 'name': 'Katapult Holdings',
+ 'pe_ttm': None,
+ 'percent': 40.6077,
+ 'symbol': 'KPLT'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 36.39,
+ 'market_capital': 882016308,
+ 'name': '在线赞助',
+ 'pe_ttm': None,
+ 'percent': 38.2074,
+ 'symbol': 'SPRT'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 7.06,
+ 'market_capital': 462884911,
+ 'name': 'Vinco',
+ 'pe_ttm': None,
+ 'percent': 33.2075,
+ 'symbol': 'BBIG'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 51,
+ 'market_capital': 2703807432,
+ 'name': 'Valneva SE',
+ 'pe_ttm': None,
+ 'percent': 32.4675,
+ 'symbol': 'VALN'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 17.75,
+ 'market_capital': 36486208,
+ 'name': 'Altisource资产管理',
+ 'pe_ttm': 0.613,
+ 'percent': 25.4417,
+ 'symbol': 'AAMC'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 3.38,
+ 'market_capital': 30965498,
+ 'name': '亚洲时代',
+ 'pe_ttm': None,
+ 'percent': 22.8242,
+ 'symbol': 'ATIF'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 6.4,
+ 'market_capital': 126405248,
+ 'name': 'Sphere 3d',
+ 'pe_ttm': None,
+ 'percent': 22.6054,
+ 'symbol': 'ANY'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 1.7,
+ 'market_capital': 471773800,
+ 'name': 'Mechel PAO American Depositary Shares (each representing one-half of '
+         'a Preferred Share)',
+ 'pe_ttm': 0,
+ 'percent': 22.3022,
+ 'symbol': 'MTL-'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 5.51,
+ 'market_capital': 60351956,
+ 'name': 'SeqLL',
+ 'pe_ttm': None,
+ 'percent': 21.3656,
+ 'symbol': 'SQL'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 7.45,
+ 'market_capital': 325965147,
+ 'name': '恩普雷萨电力',
+ 'pe_ttm': None,
+ 'percent': 21.1382,
+ 'symbol': 'EDN'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 8.45,
+ 'market_capital': 55629113,
+ 'name': '中国循环能源',
+ 'pe_ttm': 9.936,
+ 'percent': 19.8582,
+ 'symbol': 'CREG'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 9.46,
+ 'market_capital': 230874393,
+ 'name': 'Reneo',
+ 'pe_ttm': None,
+ 'percent': 19.7468,
+ 'symbol': 'RPHM'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 49.9,
+ 'market_capital': 730755011,
+ 'name': '独立控股',
+ 'pe_ttm': 7.59,
+ 'percent': 18.7812,
+ 'symbol': 'IHC'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 4.97,
+ 'market_capital': 19491028,
+ 'name': 'Cellect生物科技',
+ 'pe_ttm': None,
+ 'percent': 18.6158,
+ 'symbol': 'APOP'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 28.1,
+ 'market_capital': 630009587,
+ 'name': 'Big 5体育用品',
+ 'pe_ttm': 5.846,
+ 'percent': 18.1169,
+ 'symbol': 'BGFV'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 50.83,
+ 'market_capital': 25707049255,
+ 'name': '探索传播B',
+ 'pe_ttm': 18.588,
+ 'percent': 18.0172,
+ 'symbol': 'DISCB'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 21.99,
+ 'market_capital': 537841469,
+ 'name': 'DSP集团',
+ 'pe_ttm': None,
+ 'percent': 17.8457,
+ 'symbol': 'DSPG'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 3.39,
+ 'market_capital': 705578911,
+ 'name': '车里雅宾斯克钢铁',
+ 'pe_ttm': 64.685,
+ 'percent': 17.7083,
+ 'symbol': 'MTL'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 64,
+ 'market_capital': 4704869120,
+ 'name': '大全新能源',
+ 'pe_ttm': 11.506,
+ 'percent': 17.4959,
+ 'symbol': 'DQ'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 18.09,
+ 'market_capital': 349318334,
+ 'name': 'Grindrod Shipping',
+ 'pe_ttm': None,
+ 'percent': 17.2391,
+ 'symbol': 'GRIN'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 2.73,
+ 'market_capital': 429850553,
+ 'name': 'Cybin',
+ 'pe_ttm': None,
+ 'percent': 16.6667,
+ 'symbol': 'CYBN'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 2.85,
+ 'market_capital': 385626620,
+ 'name': 'IRSA Propiedades',
+ 'pe_ttm': 2.303,
+ 'percent': 16.3265,
+ 'symbol': 'IRCP'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 13.61,
+ 'market_capital': 398660622,
+ 'name': 'Codex DNA',
+ 'pe_ttm': None,
+ 'percent': 15.8298,
+ 'symbol': 'DNAY'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 8.31,
+ 'market_capital': 14348088,
+ 'name': 'Regional Health',
+ 'pe_ttm': None,
+ 'percent': 15.5772,
+ 'symbol': 'RHE'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 46.88,
+ 'market_capital': 6185093204,
+ 'name': '铱星通讯',
+ 'pe_ttm': None,
+ 'percent': 15.4111,
+ 'symbol': 'IRDM'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 4.66,
+ 'market_capital': 181210927,
+ 'name': 'Aquestive疗法',
+ 'pe_ttm': None,
+ 'percent': 15.3465,
+ 'symbol': 'AQST'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 8.65,
+ 'market_capital': 634896904,
+ 'name': 'Lightning eMotors',
+ 'pe_ttm': None,
+ 'percent': 15.3333,
+ 'symbol': 'ZEV'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 0.655,
+ 'market_capital': 69643292,
+ 'name': '美联国际教育',
+ 'pe_ttm': None,
+ 'percent': 14.7512,
+ 'symbol': 'METX'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 3.88,
+ 'market_capital': 84244287,
+ 'name': 'Sypris科技',
+ 'pe_ttm': 18.663,
+ 'percent': 14.1176,
+ 'symbol': 'SYPR'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 31.2,
+ 'market_capital': 1218663982,
+ 'name': 'SkyWater Technology',
+ 'pe_ttm': None,
+ 'percent': 13.9934,
+ 'symbol': 'SKYT'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 20.65,
+ 'market_capital': 1187461214,
+ 'name': '康乃德生物',
+ 'pe_ttm': None,
+ 'percent': 13.9625,
+ 'symbol': 'CNTB'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 9.99,
+ 'market_capital': 84242823,
+ 'name': 'MediaCo Holding',
+ 'pe_ttm': None,
+ 'percent': 13.9111,
+ 'symbol': 'MDIA'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 32.75,
+ 'market_capital': 5162235060,
+ 'name': 'Riskified',
+ 'pe_ttm': None,
+ 'percent': 13.2434,
+ 'symbol': 'RSKD'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 8.03,
+ 'market_capital': 160208144,
+ 'name': 'WISeKey',
+ 'pe_ttm': None,
+ 'percent': 13.0986,
+ 'symbol': 'WKEY'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 22.6,
+ 'market_capital': 400103439,
+ 'name': 'INmune Bio',
+ 'pe_ttm': None,
+ 'percent': 12.8308,
+ 'symbol': 'INMB'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 2.69,
+ 'market_capital': 687500621,
+ 'name': '高途',
+ 'pe_ttm': None,
+ 'percent': 12.5523,
+ 'symbol': 'GOTU'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 5.47,
+ 'market_capital': 45913041,
+ 'name': 'Bridgeline数字',
+ 'pe_ttm': None,
+ 'percent': 12.5514,
+ 'symbol': 'BLIN'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 2.25,
+ 'market_capital': 3856992458,
+ 'name': '新东方',
+ 'pe_ttm': 9.812,
+ 'percent': 12.5,
+ 'symbol': 'EDU'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 12.36,
+ 'market_capital': 2243707141,
+ 'name': 'AST SpaceMobile',
+ 'pe_ttm': None,
+ 'percent': 12.4659,
+ 'symbol': 'ASTS'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 8.28,
+ 'market_capital': 2642109879,
+ 'name': 'MarketWise',
+ 'pe_ttm': None,
+ 'percent': 12.3474,
+ 'symbol': 'MKTW'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 53.44,
+ 'market_capital': 1527842867,
+ 'name': 'Puretech Health',
+ 'pe_ttm': 255.279,
+ 'percent': 12.3397,
+ 'symbol': 'PRTC'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 8.14,
+ 'market_capital': 202672439,
+ 'name': 'Decibel Therapeutics',
+ 'pe_ttm': None,
+ 'percent': 12.2759,
+ 'symbol': 'DBTX'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 4.77,
+ 'market_capital': 238958678,
+ 'name': '荔枝',
+ 'pe_ttm': None,
+ 'percent': 11.9718,
+ 'symbol': 'LIZI'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 30.2,
+ 'market_capital': 1087914019,
+ 'name': 'Renalytix AI',
+ 'pe_ttm': None,
+ 'percent': 11.8104,
+ 'symbol': 'RNLX'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 12.92,
+ 'market_capital': 34371464,
+ 'name': '诺泰克电子',
+ 'pe_ttm': None,
+ 'percent': 11.7647,
+ 'symbol': 'NSYS'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 19.92,
+ 'market_capital': 98793499,
+ 'name': 'Virpax',
+ 'pe_ttm': None,
+ 'percent': 11.6592,
+ 'symbol': 'VRPX'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 81.19,
+ 'market_capital': 11548214966,
+ 'name': 'Global-E Online',
+ 'pe_ttm': 2950.489,
+ 'percent': 11.5554,
+ 'symbol': 'GLBE'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 2.03,
+ 'market_capital': 176813818,
+ 'name': 'NextPlay',
+ 'pe_ttm': None,
+ 'percent': 11.5385,
+ 'symbol': 'NXTP'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 2.05,
+ 'market_capital': 17264916,
+ 'name': 'Abraxas石油',
+ 'pe_ttm': None,
+ 'percent': 11.41,
+ 'symbol': 'AXAS'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 7.69,
+ 'market_capital': 399510157,
+ 'name': 'Enochian Biosciences',
+ 'pe_ttm': None,
+ 'percent': 11.288,
+ 'symbol': 'ENOB'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 2.77,
+ 'market_capital': 229287456,
+ 'name': 'Uranium Royalty',
+ 'pe_ttm': None,
+ 'percent': 11.245,
+ 'symbol': 'UROY'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 14,
+ 'market_capital': 1403230990,
+ 'name': 'IronNet',
+ 'pe_ttm': None,
+ 'percent': 11.1994,
+ 'symbol': 'IRNT'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 26.55,
+ 'market_capital': 662974528,
+ 'name': 'Calliditas',
+ 'pe_ttm': None,
+ 'percent': 11.0465,
+ 'symbol': 'CALT'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 0.5166,
+ 'market_capital': 84104863,
+ 'name': '黄金矿产',
+ 'pe_ttm': None,
+ 'percent': 11.0251,
+ 'symbol': 'AUMN'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 0.545,
+ 'market_capital': 56786436,
+ 'name': 'Camber能源',
+ 'pe_ttm': None,
+ 'percent': 10.9754,
+ 'symbol': 'CEI'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 3.46,
+ 'market_capital': 20437756,
+ 'name': 'Antelope Enterprise',
+ 'pe_ttm': None,
+ 'percent': 10.8974,
+ 'symbol': 'AEHL'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 8.59,
+ 'market_capital': 401324912,
+ 'name': 'Redhill Biopharma',
+ 'pe_ttm': None,
+ 'percent': 10.6959,
+ 'symbol': 'RDHL'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 10.25,
+ 'market_capital': 97922709,
+ 'name': 'The Glimpse Group',
+ 'pe_ttm': None,
+ 'percent': 10.6911,
+ 'symbol': 'VRAR'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 38.78,
+ 'market_capital': 60916943,
+ 'name': 'Live Ventures',
+ 'pe_ttm': 2.133,
+ 'percent': 10.5788,
+ 'symbol': 'LIVE'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 2.54,
+ 'market_capital': 232014939,
+ 'name': 'Grupo Supervielle',
+ 'pe_ttm': 6.765,
+ 'percent': 10.4348,
+ 'symbol': 'SUPV'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 3.6,
+ 'market_capital': 132786281,
+ 'name': '蓝城兄弟',
+ 'pe_ttm': None,
+ 'percent': 10.4294,
+ 'symbol': 'BLCT'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 49.08,
+ 'market_capital': 2340081786,
+ 'name': '晶科能源',
+ 'pe_ttm': 89.541,
+ 'percent': 10.4162,
+ 'symbol': 'JKS'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 15.29,
+ 'market_capital': 280415955,
+ 'name': 'Vidler Water',
+ 'pe_ttm': 27.486,
+ 'percent': 10.3971,
+ 'symbol': 'VWTR'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 0.6062,
+ 'market_capital': 61774192,
+ 'name': 'Diffusion制药',
+ 'pe_ttm': None,
+ 'percent': 10.1981,
+ 'symbol': 'DFFN'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 14.05,
+ 'market_capital': 5901000000,
+ 'name': 'Navios Maritime Holdings Inc. Sponsored ADR Representing 1/100th '
+         'Perp. Preferred Series H%',
+ 'pe_ttm': 0,
+ 'percent': 10.1961,
+ 'symbol': 'NM-H'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 0.8871,
+ 'market_capital': 88252298,
+ 'name': '铜道控股',
+ 'pe_ttm': None,
+ 'percent': 10.1851,
+ 'symbol': 'GLG'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 5.09,
+ 'market_capital': 26883145,
+ 'name': 'Xtl生物制药',
+ 'pe_ttm': None,
+ 'percent': 9.9352,
+ 'symbol': 'XTLB'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 14.25,
+ 'market_capital': 2850000000,
+ 'name': 'Navios Maritime Holdings Inc. Sponsored ADR Representing 1/100th '
+         'Perpetual Preferred Series G (Marshall Islands)',
+ 'pe_ttm': 0,
+ 'percent': 9.7843,
+ 'symbol': 'NM-G'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 7.55,
+ 'market_capital': 999023271,
+ 'name': 'Innoviz Technologies',
+ 'pe_ttm': None,
+ 'percent': 9.7384,
+ 'symbol': 'INVZ'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 145.78,
+ 'market_capital': 9594739720,
+ 'name': '希尔罗控股',
+ 'pe_ttm': 40.399,
+ 'percent': 9.6915,
+ 'symbol': 'HRC'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 6.62,
+ 'market_capital': 1300837388,
+ 'name': 'Xos',
+ 'pe_ttm': None,
+ 'percent': 9.6026,
+ 'symbol': 'XOS'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 8.98,
+ 'market_capital': 575341892,
+ 'name': 'Reservoir Media',
+ 'pe_ttm': None,
+ 'percent': 9.5122,
+ 'symbol': 'RSVR'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 55.99,
+ 'market_capital': 10464393769,
+ 'name': '万国数据',
+ 'pe_ttm': None,
+ 'percent': 9.3555,
+ 'symbol': 'GDS'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 2.93,
+ 'market_capital': 443608519,
+ 'name': 'Central Puerto',
+ 'pe_ttm': 6.568,
+ 'percent': 9.3284,
+ 'symbol': 'CEPU'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 24.6,
+ 'market_capital': 4144692476,
+ 'name': 'Recursion',
+ 'pe_ttm': None,
+ 'percent': 9.2848,
+ 'symbol': 'RXRX'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 1.06,
+ 'market_capital': 52766099,
+ 'name': '流利说',
+ 'pe_ttm': None,
+ 'percent': 9.2784,
+ 'symbol': 'LAIX'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 6.61,
+ 'market_capital': 126903195,
+ 'name': 'Evaxion Biotech',
+ 'pe_ttm': None,
+ 'percent': 9.2562,
+ 'symbol': 'EVAX'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 7.77,
+ 'market_capital': 854426364,
+ 'name': 'OppFi',
+ 'pe_ttm': None,
+ 'percent': 9.1292,
+ 'symbol': 'OPFI'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 11.75,
+ 'market_capital': 272901235,
+ 'name': 'Elevation Oncology',
+ 'pe_ttm': None,
+ 'percent': 9.0994,
+ 'symbol': 'ELEV'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 11.12,
+ 'market_capital': 221830656,
+ 'name': 'Bragg Gaming Group',
+ 'pe_ttm': None,
+ 'percent': 9.0196,
+ 'symbol': 'BRAG'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 2.66,
+ 'market_capital': 79650995,
+ 'name': 'Liminal BioSciences',
+ 'pe_ttm': None,
+ 'percent': 9.0164,
+ 'symbol': 'LMNL'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 13.3,
+ 'market_capital': 1408932521,
+ 'name': 'Humacyte',
+ 'pe_ttm': None,
+ 'percent': 9.0164,
+ 'symbol': 'HUMA'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 6.62,
+ 'market_capital': 236564158,
+ 'name': 'Aterian',
+ 'pe_ttm': None,
+ 'percent': 8.8816,
+ 'symbol': 'ATER'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 3.34,
+ 'market_capital': 89740426,
+ 'name': '研控科技',
+ 'pe_ttm': None,
+ 'percent': 8.7948,
+ 'symbol': 'RCON'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 5.45,
+ 'market_capital': 27306555,
+ 'name': 'FGF基金',
+ 'pe_ttm': None,
+ 'percent': 8.7824,
+ 'symbol': 'FGF'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 0.7251,
+ 'market_capital': 657353144,
+ 'name': 'Naked Brand Group',
+ 'pe_ttm': None,
+ 'percent': 8.7269,
+ 'symbol': 'NAKD'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 4.99,
+ 'market_capital': 332886453,
+ 'name': 'Pieris制药',
+ 'pe_ttm': None,
+ 'percent': 8.7146,
+ 'symbol': 'PIRS'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 15.26,
+ 'market_capital': 3169071027,
+ 'name': 'Oscar Health',
+ 'pe_ttm': None,
+ 'percent': 8.6121,
+ 'symbol': 'OSCR'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 21.9,
+ 'market_capital': 2098762651,
+ 'name': '格林电视',
+ 'pe_ttm': 4.95,
+ 'percent': 8.5771,
+ 'symbol': 'GTN.A'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 1.07,
+ 'market_capital': 103151878,
+ 'name': 'Check-cap',
+ 'pe_ttm': None,
+ 'percent': 8.5303,
+ 'symbol': 'CHEK'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 8.21,
+ 'market_capital': 163434253,
+ 'name': '摩尼综合机械',
+ 'pe_ttm': 143.868,
+ 'percent': 8.4544,
+ 'symbol': 'MNTX'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 10.91,
+ 'market_capital': 100643572,
+ 'name': '高频电子',
+ 'pe_ttm': 148.005,
+ 'percent': 8.3416,
+ 'symbol': 'FEIM'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 3.39,
+ 'market_capital': 35583701,
+ 'name': 'Moving iMage技术',
+ 'pe_ttm': None,
+ 'percent': 8.3067,
+ 'symbol': 'MITQ'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 19.11,
+ 'market_capital': 1221919007,
+ 'name': 'Banco Macro S.A. ',
+ 'pe_ttm': 4.767,
+ 'percent': 8.272,
+ 'symbol': 'BMA'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 10.71,
+ 'market_capital': 667646374,
+ 'name': 'Poseida Therapeutics',
+ 'pe_ttm': None,
+ 'percent': 8.1818,
+ 'symbol': 'PSTX'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 36.8,
+ 'market_capital': 2469301859,
+ 'name': 'Berkeley Lights',
+ 'pe_ttm': None,
+ 'percent': 8.1717,
+ 'symbol': 'BLI'}
+2021-08-31 19:22:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://xueqiu.com/service/v5/stock/screener/quote/list?page=1&size=100&order=desc&orderby=percent&order_by=percent&market=US&type=us&_=1630408978243>
+{'current': 9.64,
+ 'market_capital': 1791084767,
+ 'name': 'Volta',
+ 'pe_ttm': 230.757,
+ 'percent': 8.0717,
+ 'symbol': 'VLTA'}
+2021-08-31 19:22:58 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-08-31 19:22:58 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 416,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 17359,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.533135,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 8, 31, 11, 22, 58, 774130),
+ 'httpcompression/response_bytes': 77421,
+ 'httpcompression/response_count': 1,
+ 'item_scraped_count': 100,
+ 'log_count/DEBUG': 101,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 8, 31, 11, 22, 58, 240995)}
+2021-08-31 19:22:58 [scrapy.core.engine] INFO: Spider closed (finished)
