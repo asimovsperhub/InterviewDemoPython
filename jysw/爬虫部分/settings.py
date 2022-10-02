@@ -1,4 +1,4 @@
-# Scrapy settings for 简约思维 project
+# Scrapy settings for jysw project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,13 +7,13 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = '简约思维'
+BOT_NAME = 'jysw'
 
-SPIDER_MODULES = ['简约思维.spiders']
-NEWSPIDER_MODULE = '简约思维.spiders'
+SPIDER_MODULES = ['jysw.spiders']
+NEWSPIDER_MODULE = 'jysw.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-# USER_AGENT = '简约思维 (+http://www.yourdomain.com)'
+# USER_AGENT = 'jysw (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -47,13 +47,13 @@ DEFAULT_REQUEST_HEADERS = {
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 # SPIDER_MIDDLEWARES = {
-#    '简约思维.middlewares.JyswSpiderMiddleware': 543,
+#    'jysw.middlewares.JyswSpiderMiddleware': 543,
 # }
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 # DOWNLOADER_MIDDLEWARES = {
-#    '简约思维.middlewares.JyswDownloaderMiddleware': 543,
+#    'jysw.middlewares.JyswDownloaderMiddleware': 543,
 # }
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ DEFAULT_REQUEST_HEADERS = {
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 # ITEM_PIPELINES = {
-#    '简约思维.pipelines.JyswPipeline': 300,
+#    'jysw.pipelines.JyswPipeline': 300,
 # }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

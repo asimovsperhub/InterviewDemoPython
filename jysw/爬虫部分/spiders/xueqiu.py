@@ -2,7 +2,7 @@ import json
 import time
 import scrapy
 
-from InterviewDemoPython.简约思维.爬虫部分.items import XueqiuItem
+from InterviewDemoPython.jysw.爬虫部分.items import XueqiuItem
 
 
 class Xueqiu(scrapy.Spider):

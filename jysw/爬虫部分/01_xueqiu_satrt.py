@@ -6,13 +6,13 @@ from scrapy.utils.project import get_project_settings
 if __name__ == '__main__':
     setting_ = get_project_settings()
     today = datetime.now()
-    setting_["csv_filename"] = "aliexpress.csv"
+    setting_["csv_filename"] = "xueqiu.csv"
     setting_['fieldnames'] = ['symbol', 'name', 'current', 'percent', 'market_capital', 'pe_ttm']
     setting_["ITEM_PIPELINES"] = {
-        '简约思维.pipelines.CsvPipeline': 300,
+        'jysw.pipelines.CsvPipeline': 300,
     }
-    # setting_["CONCURRENT_REQUESTS"] = 2
-    # setting_["LOG_FILE"] = "xueqiu_{}_{}_{}.log".format(today.year, today.month, today.day)
+    setting_["CONCURRENT_REQUESTS"] = 2
+    setting_["LOG_FILE"] = "xueqiu_{}_{}_{}.log".format(today.year, today.month, today.day)
     process = CrawlerProcess(settings=setting_)
-    process.crawl("aliexpress")
+    process.crawl("xueqiu")
     process.start()
